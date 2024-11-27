@@ -18,18 +18,26 @@ export function Navigation() {
           </li>
           <li className="md:mb-0 mb-4">
             <a
-              href="/Historial"
+              href="/Predicciones"
               className="block text-center p-2 hover:bg-white hover:text-black transition-colors duration-200"
             >
-              Historial
+              Predicciones
             </a>
           </li>
           <li className="md:mb-0 mb-4">
             <a
-              href="/Otro"
+              href="/Tendencias"
               className="block text-center p-2 hover:bg-white hover:text-black transition-colors duration-200"
             >
-              Otro
+              Tendencias
+            </a>
+          </li>
+          <li className="md:mb-0 mb-4">
+            <a
+              href="/Historial"
+              className="block text-center p-2 hover:bg-white hover:text-black transition-colors duration-200"
+            >
+              Historial
             </a>
           </li>
           <li className="md:mb-0">

@@ -11,7 +11,6 @@ export function LoginForm() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
-    lastname: "",
     email: "",
     password: "",
   });
@@ -30,7 +29,7 @@ export function LoginForm() {
     e.preventDefault();
 
     // Verificar que todos los campos estén llenados
-    if (!formData.name || !formData.lastname || !formData.email || !formData.password) {
+    if (!formData.name || !formData.email || !formData.password) {
       setFormError("Por favor, completa todos los campos.");
       return;
     } else {
@@ -38,7 +37,7 @@ export function LoginForm() {
     }
 
     try {
-      const response = await fetch("http://34.236.185.151/api/v1/auth/register", {
+      const response = await fetch("https://kingdomfungiback.integrador.xyz/api/auth/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,8 +70,6 @@ export function LoginForm() {
               <Paragraphs text="Nombre:" />
               <InputT type="text" name="name" placeholder="Nombres" value={formData.name} onChange={handleChange} />
             </label>
-
-
 
             <label className="mt-4">
               <Paragraphs text="Correo:" />
